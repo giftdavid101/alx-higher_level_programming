@@ -6,34 +6,30 @@
 3
 >>> add_integer(45, 24)
 69
->>> add_integer(1)
-99
->>> add_integer(.1)
-98
 >>> add_integer(-1,1)
 0
 
 """ ERRORS """
 
-#pass in not int, a string
->>> add_integer("sophia", 2)
+#arg not int, a string
+>>> add_integer("Gift", 2)
 Traceback (most recent call last):
 ...
-TypeError: a must be an integer
+TypeError: a or b  must be an integer
 
 
-#pass in not int, a list
+#arg not int, a list
 >>> add_integer([0], {})
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
 
-#pass in a string for b
+#arg a string, for b
 >>> add_integer(5, "terry")
 Traceback (most recent call last):
 ...
-TypeError: b must be an integer
+TypeError:a or  b must be an integer
 
 
 #pass in nothing
@@ -43,7 +39,7 @@ Traceback (most recent call last):
 TypeError: a must be an integer
 
 
-#converting float infinititties to int errors 
+#converting float infinities to int errors 
 >>> add_integer(float('inf'), 2)
 Traceback (most recent call last):
 ...
