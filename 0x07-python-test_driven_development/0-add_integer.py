@@ -11,4 +11,12 @@ b (int): second number.
 Returns:
 int: The sum of a and b.
 """
+    if type(a) && type(b) is not int and type(a) && type(b) is not float:
+        raise TypeError("a and b must be an integer")
+    if type(a) is float:
+        a = int(a)
+    if type(b) is float:
+        b = int(b)
+
+
     return a+b;
