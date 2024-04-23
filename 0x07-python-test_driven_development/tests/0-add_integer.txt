@@ -15,7 +15,7 @@
 >>> add_integer("Gift", 2)
 Traceback (most recent call last):
 ...
-TypeError: a or b  must be an integer
+TypeError: a must be an integer
 
 
 #arg not int, a list
@@ -29,10 +29,10 @@ TypeError: a must be an integer
 >>> add_integer(5, "terry")
 Traceback (most recent call last):
 ...
-TypeError:a or  b must be an integer
+TypeError: b must be an integer
 
 
-#pass in nothing
+#arg in nothing
 >>> add_integer(None)
 Traceback (most recent call last):
 ...
