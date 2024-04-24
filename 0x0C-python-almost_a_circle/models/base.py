@@ -14,4 +14,4 @@ class Base:
             self.id = id
 
     def __del__(self):
-        Base.__nb_objects -= 1h
+        Base.__nb_objects -= 1
