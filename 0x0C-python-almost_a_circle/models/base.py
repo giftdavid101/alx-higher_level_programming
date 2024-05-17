@@ -3,7 +3,7 @@
 
 
 class Base:
-    """ base model """
+    """ base model class """
     __nb_objects = 0
     def __init__(self, id=None):
 
