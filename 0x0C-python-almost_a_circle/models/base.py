@@ -13,7 +13,6 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
-
 if __name__ == "__main__":
     b1 = Base()
     print(b1.id)
