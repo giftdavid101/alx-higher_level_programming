@@ -5,9 +5,9 @@
 class Base:
     """ base model """
     __nb_objects = 0
-    def __init__(self, id=0):
+    def __init__(self, id=None):
 
-        if id == 0:
+        if id is None:
             self.id = id
         else:
             Base.__nb_objects += 1
