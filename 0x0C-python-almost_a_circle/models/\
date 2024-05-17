@@ -1,0 +1,41 @@
+" ============================================================================
+" Netrw Directory Listing                                        (netrw v165)
+"   /
+"   Sorted by      name
+"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:special
+" ==============================================================================
+../
+./
+AirBnB_clone/
+alx-higher_level_programming/
+alx-low_level_programming-outdated/
+alx-low_level_programming/
+alx-system_engineering-devops/
+boot/
+dev/
+etc/
+home/
+media/
+mnt/
+monty/
+myC/
+opt/
+proc/
+root/
+run/
+sorting_algorithms/
+srv/
+sys/
+tmp/
+usr/
+var/
+.dockerenv*
+README.md
+bin@	 --> usr/bin
+file.txt
+lib32@	 --> usr/lib32
+lib64@	 --> usr/lib64
+lib@	 --> usr/lib
+libx32@	 --> usr/libx32
+sbin@	 --> usr/sbin
