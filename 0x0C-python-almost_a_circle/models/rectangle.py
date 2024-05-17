@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """Rectangle class."""
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
     """Rectangle class"""
     def __init__(self, width, height, x=0, y=0, id=None):
-        super().__init(id)
+        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
@@ -33,17 +33,16 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def width(self, value):
+    def y(self, value):
         self.__y = value
 
     @property
     def x(self):
         return self.__x
 
-    @width.setter
+    @x.setter
     def x(self, value):
         self.__x = value
-
 
 if __name__ == "__main__":
 
