@@ -5,7 +5,7 @@
 class Base:
     """ base model """
     __nb_objects = 0
-    def __init__(self, id=None):
+    def __init__(self, id=0):
 
         if id == 0:
             self.id = id
