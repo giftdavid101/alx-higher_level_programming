@@ -13,7 +13,7 @@ if __name__ == '__main__':
                                  passwd=argv[2], db=argv[3], charset="utf8")
 
     db_cursor = db_connect.cursor()
-    db_cursor.execute("SELECT * FRSELECT cities.id, cities.name,\
+    db_cursor.execute("SELECT cities.id, cities.name,\
                        states.name FROM cities\
                        JOIN states ON cities.state_id = states.id\
                        ORDER BY cities.id")
