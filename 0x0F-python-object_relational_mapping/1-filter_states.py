@@ -21,4 +21,4 @@ if __name__ == '__main__':
     rows = db_cursor.fetchall()
 
     for row in rows:
-        print(f"{row[0]}: {row[1]})")
+        print(row)
