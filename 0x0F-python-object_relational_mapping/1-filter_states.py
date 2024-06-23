@@ -20,3 +20,5 @@ if __name__ == '__main__':
     for row in rows:
         if row[1].startswith("N"):
             print(row)
+    db_cursor.close()
+    db`-connect.close()
