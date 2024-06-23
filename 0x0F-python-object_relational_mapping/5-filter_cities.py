@@ -14,22 +14,9 @@ if __name__ == '__main__':
                                  passwd=argv[2], db=argv[3], charset="utf8")
 
     db_cursor = db_connect.cursor()
-    db_cursor.execute("""SELECT
-                cities.id, cities.name
-            FROM
-                cities
-            JOIN
-                states
-            ON
-                cities.state_id = states.id
-            WHERE
-                states.name LIKE BINARY %(state_name)s
-            ORDER BY
-                cities.id ASC
-        """, {
-            'state_name': argv[4]
-            })
+    db_cursor.execute("SELECT cities.name FROM cities \
+    JOIN states ON cities.state_id = states.id WHERE states.name LIKE %s \
+    ORDER BY cities.id", (argv[4],))
     rows = db_cursor.fetchall()
 
-    for row in rows:
-        print(row)
+    print(", ".join(city[0] for city in rows))
